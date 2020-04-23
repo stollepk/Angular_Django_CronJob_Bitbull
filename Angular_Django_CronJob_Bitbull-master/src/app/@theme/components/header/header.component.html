@@ -1,0 +1,13 @@
+<div class="header-container">
+    <div class="logo-containter">
+        <a (click)="toggleSidebar()" href="#" class="navigation"><i class="nb-menu"></i></a>
+        <div class="logo" (click)="goToHome()" style="background: url('assets/images/bitbull_logo.png'); background-size: cover;"></div>
+    </div>
+    <ngx-theme-switcher></ngx-theme-switcher>
+</div>
+
+<nb-actions size="medium" class="header-container right">
+    <nb-action>
+        <nb-user [menu]="userMenu" [name]="user?.name" [picture]="user?.picture"></nb-user>
+    </nb-action>
+</nb-actions>
